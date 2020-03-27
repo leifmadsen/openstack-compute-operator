@@ -1,0 +1,7 @@
+apiVersion: controller.openstack.org/v1alpha1
+kind: OpenStackController
+metadata:
+  name: example-openstackcontroller
+spec:
+  # Add fields here
+  size: 3
