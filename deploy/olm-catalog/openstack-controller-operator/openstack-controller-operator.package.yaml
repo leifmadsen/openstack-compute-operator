@@ -1,0 +1,5 @@
+channels:
+- currentCSV: openstack-controller-operator.v0.0.1
+  name: devel
+defaultChannel: devel
+packageName: openstack-controller-operator

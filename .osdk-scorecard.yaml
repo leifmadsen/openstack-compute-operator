@@ -1,0 +1,14 @@
+scorecard:
+  version: v1alpha2
+  output: text
+  bundle: deploy/olm-catalog/openstack-controller-operator/0.0.1/metadata
+  plugins:
+    - basic:
+        cr-manifest:
+          - "deploy/crds/controller.openstack.org_v1alpha1_openstackcontroller_cr.yaml"
+        csv-path: "deploy/olm-catalog/openstack-controller-operator/0.0.1/openstack-controller-operator.v0.0.1.clusterserviceversion.yaml"
+    - olm:
+        cr-manifest:
+          - "deploy/crds/controller.openstack.org_v1alpha1_openstackcontroller_cr.yaml"
+        csv-path: "deploy/olm-catalog/openstack-controller-operator/0.0.1/openstack-controller-operator.v0.0.1.clusterserviceversion.yaml"
+
