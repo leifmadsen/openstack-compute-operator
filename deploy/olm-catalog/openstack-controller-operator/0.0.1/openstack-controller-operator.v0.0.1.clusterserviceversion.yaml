@@ -61,7 +61,13 @@ spec:
         x-descriptors:
         - urn:alm:descriptor:io.kubernetes.conditions
       version: v1alpha1
-  description: Placeholder description
+    required:
+    - description: Creation of Neutron OVS Agents
+      displayName: Neutron OVS Agent
+      kind: NeutronOvsAgent
+      name: neutron.openstack.org
+      version: v1
+  description: Create OpenStack Controller instances
   displayName: Openstack Controller Operator
   install:
     spec:
